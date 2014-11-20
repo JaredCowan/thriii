@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thriii MVP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/theme.css" rel="stylesheet">
+    <link href="assets/font-awesome/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap-daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="css/flexslider.css"/>
+    <link href="assets/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="assets/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/revolution_slider/css/rs-style.css" media="screen">
+    <link rel="stylesheet" href="assets/revolution_slider/rs-plugin/css/settings.css" media="screen">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-responsive.css" rel="stylesheet" />
+  </head>
+  <!--header start-->
+  <header class="header-frontend">
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="fa fa-bar"></span>
+          <span class="fa fa-bar"></span>
+          <span class="fa fa-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/thriii-logo.png">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse thriii-header-background">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="price.html">Price</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="signin.html">Sign In</a></li>
+            <li><a href="signup.html">Free Trial</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--header end-->
+  <!--breadcrumbs start-->
+  <div class="breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-4">
+          <h1>Login</h1>
+        </div>
+        <div class="col-lg-8 col-sm-8">
+          <ol class="breadcrumb pull-right">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">Sign In</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--breadcrumbs end-->
+  <body class="login-body">
+    <form class="form-signin" action="index.html">
+      <h2 class="form-signin-heading">sign in now</h2>
+      <div class="login-wrap">
+        <input type="text" class="form-control" placeholder="User ID" autofocus>
+        <input type="password" class="form-control" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+          <span class="pull-right">
+          <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
+          </span>
+        </label>
+        <a href="dashboard.html" class="btn btn-lg btn-login btn-block" type="submit">Sign in</a>
+        <p>or you can sign in via social network</p>
+        <div class="login-social-link">
+          <a href="dashboard.html" class="facebook">
+            <i class="fa fa-facebook"></i>
+            Facebook
+          </a>
+          <a href="dashboard.html" class="twitter">
+            <i class="fa fa-twitter"></i>
+            Twitter
+          </a>
+        </div>
+        <div class="registration">
+          Don't have an account yet?
+          <a class="" href="signup.html">
+            Create an account
+          </a>
+        </div>
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Forgot Password ?</h4>
+              </div>
+              <div class="modal-body">
+                <p>Enter your e-mail address below to reset your password.</p>
+                <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+              </div>
+              <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                <button class="btn btn-success" type="button">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- modal -->
+      </form>
+    </div>
+    <!--footer start-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-3">
+                     <h1>contact info</h1>
+                     <address>
+                         <p>Address: 123 10th Street</p>
+                         <p>Venice Beach, CA, 90266
+                         <p>Phone : (310) 123-1444</p>
+                         <p>Fax : (310) 555-1313</p>
+                         <p>Email : <a href="javascript:;">support@thriii.com</a></p>
+                     </address>
+                 </div>
+                 <div class="col-lg-5 col-sm-5">
+                     <h1>latest tweet</h1>
+                     <div class="tweet-box">
+                         <i class="fa fa-twitter"></i>
+                         <em>Please follow <a href="javascript:;">@thriii</a> for all future updates of us! <a href="javascript:;">twitter.com/thriii</a></em>
+                     </div>
+                 </div>
+      <div class="col-lg-3 col-sm-3 col-lg-offset-1">
+        <h1>stay connected</h1>
+        <ul class="social-link-footer list-unstyled">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-skype"></i></a></li>
+          <li><a href="#"><i class="fa fa-github"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--footer end-->
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
