@@ -140,4 +140,19 @@ var Script = function () {
         })
     }
 
-}();
+}()
+
+;(function() {
+    $(window).on('scroll', function() {
+        
+        var nav = $(".thriii__landing--nav");
+        var nav_cont = $(".thriii__landing").innerHeight() - $(window).scrollTop();
+        var nav_pos = nav.offset().top - $(window).scrollTop();
+        if (nav_pos < 1 && nav_cont < nav.innerHeight()) {
+            nav.addClass("thriii__landing--nav--stuck");
+        } else if (nav_cont > nav.innerHeight()) {
+            nav.removeClass("thriii__landing--nav--stuck");
+        }
+        
+    })
+}).call();
