@@ -33,8 +33,8 @@ var Script = function () {
 
 //    nicescroll
     
-    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#e8403f", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});});
-    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#e8403f", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});});
+    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});});
+    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});});
 
 //    sidebar toggle
 
@@ -103,6 +103,13 @@ var Script = function () {
 
     $('.popovers').popover();
 
+//    slider
+    $(function(){
+        setTimeout(function() {
+           jQuery('.right').trigger('click');
+        }, 1000);
+    }())
+
 //    bxslider
 
     $('.bxslider').show();
@@ -142,17 +149,44 @@ var Script = function () {
 
 }()
 
+
+
 ;(function() {
-    $(window).on('scroll', function() {
-        
-        var nav = $(".thriii__landing--nav");
-        var nav_cont = $(".thriii__landing").innerHeight() - $(window).scrollTop();
-        var nav_pos = nav.offset().top - $(window).scrollTop();
+    "use strict";
+
+//  sticky nav
+    $( window ).on('scroll', function() {
+        var nav      = $( ".thriii__landing--nav" )
+          , nav_cont = $( ".thriii__landing" ).innerHeight() - $(window).scrollTop()
+          , nav_pos  = nav.offset().top - $( window ).scrollTop();
+
         if (nav_pos < 1 && nav_cont < nav.innerHeight()) {
             nav.addClass("thriii__landing--nav--stuck");
         } else if (nav_cont > nav.innerHeight()) {
             nav.removeClass("thriii__landing--nav--stuck");
         }
-        
-    })
-}).call();
+    }) //  END sticky nav
+ 
+
+//  scroll to page section on click
+    $( '.thriii__landing--nav--item a' ).on('click', function() {
+        var el      = $( this ).attr( 'href' )
+          , el_pos  = $( el ).offset().top
+          , win_pos = $( window ).scrollTop()
+          , o       = $( el ).offset().top - win_pos - $( ".thriii__landing--nav" ).innerHeight()
+          , current = window.location.hash
+          , el_scroll_to;
+
+        if ( el === "#sales-orders" ) {
+            el_scroll_to = el_pos;
+        } else {
+            el_scroll_to = el_pos - 100;
+        }
+
+        $( 'html, body' ).animate({
+            scrollTop: el_scroll_to
+          }, 800
+        )
+    }) //  END scroll to section on click
+
+}( jQuery ));
