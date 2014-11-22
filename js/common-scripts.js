@@ -151,7 +151,7 @@ var Script = function () {
 
 
 
-;(function() {
+;(function($) {
     "use strict";
 
 //  sticky nav

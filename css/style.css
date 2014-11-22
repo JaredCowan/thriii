@@ -2206,9 +2206,10 @@ body {
 }
 .thriii__landing--content--inner > a > img {
   position: absolute;
+  z-index: 1;
   bottom: -40px;
   right: -184px;
-  /*clip: rect(25px,516px,143px,273px)*/
+  clip: rect(0px,517px,215px,236px);
 }
 .thriii__landing--content--inner h1 {
   font-family: 'Fjalla One', sans-serif;
@@ -2217,6 +2218,18 @@ body {
   padding: 7px;
   color: #fff;
   top: -22px;
+}
+.thriii__landing--content--inner--form {
+  background: grey;
+  margin-top: -10px;
+  padding: 10px;
+  opacity: .8;
+  height: 275px;
+  width: 60%;
+}
+.thriii__landing--content--inner--form label {
+  padding-left: 16px;
+  float: left;
 }
 .thriii__landing--content--inner--show__details__button {
   position: absolute;
