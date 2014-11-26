@@ -169,7 +169,8 @@ var Script = function () {
  
 
 //  scroll to page section on click
-    $( '.thriii__landing--nav--item a' ).on('click', function() {
+    $( '.thriii__landing--nav--item a' ).on('click', function(e) {
+        e.preventDefault();
         var el      = $( this ).attr( 'href' )
           , el_pos  = $( el ).offset().top
           , win_pos = $( window ).scrollTop()
