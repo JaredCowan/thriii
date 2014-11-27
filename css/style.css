@@ -2263,6 +2263,18 @@ body {
   left: 0;
   margin: 0 auto;
 }
+.thriii__landing--columns .f-box {
+  padding: 2px;
+  min-height: 110px !important;
+  background: #fff url('../img/intuit.gif') 0 -23px no-repeat ;
+  background-size: contain;
+}
+.thriii__landing--columns .f-box i {
+  margin-top: 5px;
+}
+.thriii__landing--columns .f-box h2 {
+  margin-top: 90px;
+}
 .thriii__landing--columns .f-box h2,
 .thriii__landing--columns .f-box i,
 .thriii__landing--columns .f-box:hover {
@@ -2272,7 +2284,9 @@ body {
   transition: all .4s ease-in-out;
 }
 .thriii__landing--columns .f-box:hover {
-  background: rgb(140,214,0);
+  background: rgb(140,214,0) url('../img/intuit.gif') 0 -23px no-repeat ;
+  background-size: contain;
+  /*background: rgb(140,214,0);*/
 }
 .thriii__landing--columns .f-box i {
   color: rgb(140,214,0);
@@ -2316,6 +2330,9 @@ body {
   width: 146px;
   left: 2%;
 }
+.hide-me {
+  display: none;
+}
 .thriii__landing--header--item,
 .thriii__landing--header--item a,
 .thriii__landing--nav--item,
@@ -2333,12 +2350,15 @@ body {
   position: relative;
   overflow: hidden;
   /*display: inline-block;*/
-  padding: 33px 0;
+  padding: 22px 0;
   opacity: .8;
   margin: 0 10px;
   height: 100px;
   width: 13.33333%;
 }
+/*.thriii__landing--nav--item .underline {
+  text-decoration: underline;
+}*/
 .thriii__landing--nav--item i {
   margin-top: -5px;
   display: block;
