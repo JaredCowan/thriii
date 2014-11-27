@@ -9,6 +9,12 @@ body {
   margin: 70px 0 0 0 !important;
   font-size:13px;
 }
+*[no-select] {
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
 .center-block {
   display: block;
   margin-left: auto;
@@ -2112,7 +2118,7 @@ body {
   /*background-color: #000066;*/
   /*background-color: rgb(140,214,0);*/
   background-color: rgb(204,204,204);
-  min-height: 570px;
+  min-height: 840px;
   position: relative;
   height: 100vh;
   width: 100vw;
@@ -2166,11 +2172,13 @@ body {
   color: #000;
 }
 .thriii__landing--slider {
-  max-width: 500px;
-  display: block;
-  margin: 15px auto;
   width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0;
   clear: both;
+  /* Testing only */
+  /*background: rgba(0,0,0,.4);*/
 }
 .thriii__landing--slider .
 .thriii__landing--slider li {
@@ -2180,7 +2188,9 @@ body {
   margin-right: 1px;
 }
 .thriii__landing--slider > .carousel {
-  width: 100%;
+  width: 465px;
+  height: 255px;
+  overflow: hidden;
 }
 .carousel-indicators .active {
   background: rgb(140,214,0);
@@ -2189,10 +2199,11 @@ body {
   background: url("http://placehold.it/600&text=video") center center no-repeat;
   background-color: rgb(204,204,204);
   position: absolute;
-  overflow: hidden;
+  /*overflow: hidden;*/
   margin: 0 auto;
   height: 437px;
   width: 100%;
+  cursor: default;
 }
 /*url("../img/click-to-play.png") 178px 200px no-repeat,*/
 .thriii__landing--content--inner {
@@ -2200,7 +2211,7 @@ body {
   text-transform: capitalize;
   max-width: 900px;
   position: relative;
-  margin: 19px auto;
+  margin: -20px auto;
   height: 400px;
   width: 85%;
 }
@@ -2208,8 +2219,8 @@ body {
   position: absolute;
   z-index: 1;
   bottom: -40px;
-  right: -184px;
-  clip: rect(0px,517px,215px,236px);
+  right: -38px;
+  /*clip: rect(0px,517px,215px,236px);*/
 }
 .thriii__landing--content--inner h1 {
   font-family: 'Fjalla One', sans-serif;
@@ -2220,12 +2231,20 @@ body {
   top: -22px;
 }
 .thriii__landing--content--inner--form {
-  background: grey;
+  background: transparent;
+  position: relative;
   margin-top: -10px;
-  padding: 10px;
+  margin-left: -15px;
+  /*padding: 10px;*/
   opacity: .8;
   height: 275px;
   width: 60%;
+}
+.thriii__landing--content--inner--form p {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 .thriii__landing--content--inner--form label {
   padding-left: 16px;
@@ -2236,6 +2255,33 @@ body {
   bottom: 10px;
   margin: 0 auto;
   width: inherit;
+}
+.thriii__landing--columns {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.thriii__landing--columns .f-box h2,
+.thriii__landing--columns .f-box i,
+.thriii__landing--columns .f-box:hover {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.thriii__landing--columns .f-box:hover {
+  background: rgb(140,214,0);
+}
+.thriii__landing--columns .f-box i {
+  color: rgb(140,214,0);
+}
+.thriii__landing--columns .f-box:hover i {
+  color: #fff;
+}
+.thriii__landing--nav {
+  z-index: 1000;
 }
 .thriii__landing--nav, 
 .thriii__landing--nav ul {
@@ -2278,6 +2324,9 @@ body {
 }
 .thriii__landing--nav--item {
   -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
   /*list-style-type: none;*/
   vertical-align: -webkit-baseline-middle;
   text-align: center;
@@ -2295,7 +2344,7 @@ body {
   display: block;
   opacity: .9;
   color: inherit;
-  zoom: 3;
+  font-size: 3em;
 }
 .thriii__landing--nav--item span {
   font-family: sans-serif;
@@ -2313,11 +2362,16 @@ body {
 .thriii__landing--nav--item:hover i:before,
 .thriii__landing--nav--item:hover span {
   -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  -o-transition: all .6s ease-in-out;
   text-shadow: 0 0 1.111px #000;
   opacity: 1;
 }
 .thriii__landing--nav--item:hover i:before {
   -webkit-text-stroke: .5px #000;
+  -mox-text-stroke: .5px #000;
+  -o-text-stroke: .5px #000;
+  text-stroke: .5px #000;
 }
 .fancybox-skin {
   background: transparent;
@@ -2350,5 +2404,3 @@ body {
 .thriii__shipping {
   background: red;
 }
-
-
