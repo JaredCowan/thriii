@@ -2117,9 +2117,12 @@ body {
   /*background-color: #A97D5D;*/
   /*background-color: #000066;*/
   /*background-color: rgb(140,214,0);*/
-  background-color: rgb(204,204,204);
-  min-height: 840px;
+  /*background-color: rgb(204,204,204);*/
+  background: url("../img/brown-bg.png");
+  background-size: cover;
+  min-height: 880px;
   position: relative;
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
 }
@@ -2128,7 +2131,12 @@ body {
   background: rgb(140,214,0);
   overflow: hidden;
   height: 70px;
-  width: 100vw;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2000;
 }
 .thriii__landing--header ul {
   padding: 5px;
@@ -2168,8 +2176,14 @@ body {
 }
 .thriii__landing--content {
   text-align: center;
-  position: relative;
+  position: absolute;
+  margin-top: 70px;
+  z-index: 2100;
   color: #000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .thriii__landing--slider {
   width: 100%;
@@ -2192,12 +2206,26 @@ body {
   height: 255px;
   overflow: hidden;
 }
+.thriii__landing--slider .carousel-inner {
+  height: 255px;
+  background: rgba(255,255,255,1);
+}
+.thriii__landing--slider .item img {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+}
+.thriii__landing--slider .item img.ss {
+  padding-top: 50px;
+}
 .carousel-indicators .active {
   background: rgb(140,214,0);
 }
 .thriii__landing--content--video {
-  background: url("http://placehold.it/600&text=video") center center no-repeat;
+  /*background: url("http://placehold.it/600&text=video") center center no-repeat;*/
+  background: url("http://cdn.papermag.com/uploaded_images/outdoorfilm.gif") center center no-repeat;
   background-color: rgb(204,204,204);
+  background-size: cover;
   position: absolute;
   /*overflow: hidden;*/
   margin: 0 auto;
@@ -2240,15 +2268,24 @@ body {
   height: 275px;
   width: 60%;
 }
-.thriii__landing--content--inner--form p {
+.thriii__landing--content--inner--form .item {
+  height: 240px;
+}
+.thriii__landing--content--inner--form span {
+  background: rgb(140,214,0);
+  text-align: center;
   position: absolute;
+  margin: 0 auto;
   bottom: 0;
   right: 0;
   left: 0;
 }
-.thriii__landing--content--inner--form label {
-  padding-left: 16px;
-  float: left;
+.thriii__landing--content--inner--form p {
+  text-transform: capitalize;
+  text-shadow: 0 1px 1px #fff;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #000
 }
 .thriii__landing--content--inner--show__details__button {
   position: absolute;
@@ -2258,22 +2295,36 @@ body {
 }
 .thriii__landing--columns {
   position: absolute;
-  top: 500px;
+  top: 540px;
   right: 0;
   left: 0;
   margin: 0 auto;
+  max-width: 790px;
+  z-index: 3000;
+  cursor: default;
+}
+.thriii__landing--columns--box {
+  /* */
+}
+.thriii__landing--columns--box .f-text {
+  max-height: 88px;
+  overflow: hidden;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  text-align: justify;
 }
 .thriii__landing--columns .f-box {
   padding: 2px;
   min-height: 110px !important;
-  background: #fff url('../img/intuit.gif') 0 -23px no-repeat ;
-  background-size: contain;
+  /*background: #fff url('../img/intuit.gif') 0 -23px no-repeat ;*/
+  /*background-size: contain;*/
+  max-width: 254px;
 }
 .thriii__landing--columns .f-box i {
   margin-top: 5px;
 }
 .thriii__landing--columns .f-box h2 {
-  margin-top: 90px;
+  /*margin-top: 90px;*/
 }
 .thriii__landing--columns .f-box h2,
 .thriii__landing--columns .f-box i,
@@ -2284,9 +2335,12 @@ body {
   transition: all .4s ease-in-out;
 }
 .thriii__landing--columns .f-box:hover {
-  background: rgb(140,214,0) url('../img/intuit.gif') 0 -23px no-repeat ;
-  background-size: contain;
-  /*background: rgb(140,214,0);*/
+  /*background: rgb(140,214,0) url('../img/intuit.gif') 0 -23px no-repeat ;*/
+  /*background-size: contain;*/
+  background: rgb(140,214,0);
+}
+.thriii__landing--columns .f-box:hover h2 {
+  color: rgb(64,64,64);
 }
 .thriii__landing--columns .f-box i {
   color: rgb(140,214,0);
@@ -2295,7 +2349,7 @@ body {
   color: #fff;
 }
 .thriii__landing--nav {
-  z-index: 1000;
+  z-index: 5000;
 }
 .thriii__landing--nav, 
 .thriii__landing--nav ul {
