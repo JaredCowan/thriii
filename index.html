@@ -88,7 +88,7 @@
               </section>
             </div>
             <a class="fancybox" href="http://www.adobe.com/jp/events/cs3_web_edition_tour/swfs/perform.swf">
-              <img draggable="false" src="img/click-to-play.png" >
+              <!-- <img draggable="false" src="img/click-to-play.png" > -->
             </a>
             <div class="thriii__landing--content--inner--show__details__button">
               <a class="btn btn-lg btn-thriii" href="#">Just show me the details</a>
@@ -109,7 +109,7 @@
         <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs thriii__landing--columns--box">
           <section>
             <div class="f-box">
-              <i class=" fa fa-bullhorn"></i>
+              <i class=" fa fa-warning"></i>
               <h2>Alerts</h2>
             </div>
             <p class="f-text">Get alerted to things that need your attention and be reminded. We know you're busy, we got your back.</p>
@@ -131,7 +131,7 @@
           <ul> <!-- sticky navbar nav ul -->
             <li class="thriii__landing--nav--item">
               <a href="#sales-orders"> 
-                <i class="fa fa-bar-chart-o"></i> 
+                <i class="fa fa-users"></i> 
                 <span> Sales Orders </span>
               </a>
             </li> 
@@ -153,36 +153,64 @@
                 <span> Shipping </span>
               </a>
             </li>
-            <li class="thriii__landing--nav--item hide-me">
-              <a href="#shipping">
-                Hey 
-              </a>
+            <li class="thriii__landing--nav--stuck-signup-button">
+              <a href="signup.html" class="btn btn-clear"> Sign Up Free </a>
             </li>
           </ul> <!-- END sticky navbar > ul -->
         </nav> <!-- END sticky navbar -->
       </div> <!-- END .thriii__landing-nav -->
     </div> <!-- END .thriii__landing -->
 
+  <div id="sales-orders" class="fix thriii__sales-orders thriii__content__section">
+    <h1> Sales Orders </h1>
+  </div>
 
-    <div id="sales-orders" class="fix thriii__sales-orders">
-      <h1> Sales Orders </h1>
+  <div id="warehousing" class="thriii__warehousing thriii__content__section">
+    <h1> Warehousing </h1>
+  </div>
+
+  <div id="payments" class="thriii__payments thriii__content__section">
+    <h1> Payments </h1>
+  </div>
+
+  <div id="shipping" class="thriii__shipping thriii__content__section">
+    <h1> Shipping </h1>
+  </div>
+
+
+
+    <footer class="footer thriii__footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3">
+           <h1>contact info</h1>
+           <address>
+             <p>Address: 123 10th Street</p>
+             <p>Venice Beach, CA, 90266
+             </p><p>Phone : (310) 123-1444</p>
+             <p>Fax : (310) 555-1313</p>
+             <p>Email : <a href="javascript:;">support@thriii.com</a></p>
+           </address>
+         </div>
+         <div class="col-lg-5 col-sm-5">
+           <h1>latest tweet</h1>
+           <div class="tweet-box">
+             <i class="fa fa-twitter"></i>
+             <em>Please follow <a href="javascript:;">@thriii</a> for all future updates of us! <a href="javascript:;">twitter.com/thriii</a></em>
+           </div>
+         </div>
+         <div class="col-lg-3 col-sm-3 col-lg-offset-1">
+          <h1>stay connected</h1>
+          <ul class="social-link-footer list-unstyled">
+            <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="javascript:;"><i class="fa fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <div id="warehousing" class="thriii__warehousing">
-      <h1> Warehousing </h1>
-    </div>
-
-    <div id="payments" class="thriii__payments">
-      <h1> Payments </h1>
-    </div>
-
-    <div id="shipping" class="thriii__shipping">
-      <h1> Shipping </h1>
-    </div>
-
-
-
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+  </footer>
     <!-- Javascripts -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
@@ -205,9 +233,6 @@
 
     <script type="text/javascript" src="assets/bootstrap-inputmask/bootstrap-inputmask.min.js"></script>
     <script src="js/respond.min.js" ></script>
-
-    <!--right slidebar-->
-    <!-- // <script src="js/slidebars.min.js"></script> -->
       <script defer src="js/jquery.flexslider.js"></script>
       <script type="text/javascript" src="assets/bxslider/jquery.bxslider.js"></script>
       <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>

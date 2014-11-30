@@ -33,8 +33,8 @@ var Script = function () {
 
 //    nicescroll
     
-    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});});
-    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '1000'});});
+    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
+    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
 
 //    sidebar toggle
 
@@ -104,10 +104,21 @@ var Script = function () {
     $('.popovers').popover();
 
 //    slider
-    $(function(){
-        setTimeout(function() {
-           jQuery('.right').trigger('click');
-        }, 1000);
+    // $(function(){
+    //     setTimeout(function() {
+    //        jQuery('.right').trigger('click');
+    //     }, 1000);
+    // }())
+
+    $(function() {
+        var thriiiCarousel = $(".thriii__landing--slider .carousel");
+        thriiiCarousel.each(function(){
+            $(this).carousel({
+                interval: 4000
+              , keyboard: false 
+              , pause: false
+            });
+        });
     }())
 
 //    bxslider
@@ -177,7 +188,6 @@ var Script = function () {
           , o       = $( el ).offset().top - win_pos - $( ".thriii__landing--nav" ).innerHeight()
           , current = window.location.hash
           , el_scroll_to;
-
         if ( el === "#sales-orders" ) {
             el_scroll_to = el_pos;
         } else {
@@ -188,6 +198,30 @@ var Script = function () {
             scrollTop: el_scroll_to
           }, 800
         )
+          window.location.name = el;
     }) //  END scroll to section on click
+
+    // Not working. Scrollspy
+    $( window ).on('scroll', function() {
+        var el = $(".thriii__content__section")
+          , el_pos
+          , el_id;
+        for (var i = el.length - 1; i >= 0; i--) {
+            
+            if (el[i].getAttribute('id') === 'sales-orders') {
+                el_pos = $(el[i]).offset().top - window.scrollY
+            } else {
+                el_pos = $(el[i]).offset().top - window.scrollY - 100
+            }
+
+            if (el[i].getAttribute('id') === 'sales-orders' && $(el[i]).offset().top - window.scrollY === 0) {
+                el_id = el[i].getAttribute('id');
+                // console.log(el_id);
+            } else if ($(el[i]).offset().top - window.scrollY - 100 === 0) {
+                el_id = el[i].getAttribute('id');
+                // console.log(el_id + ': ' + el_pos);
+            }
+        };
+    }) // End Scroll spy
 
 }( jQuery ));

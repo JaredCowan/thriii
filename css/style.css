@@ -2113,13 +2113,13 @@ body {
   /*background-color: #e44e4e;*/
   /*background-color: #4e4ee4;*/
   /*background-color: #587498;*/
-  /*background-color: #593E1A;*/
+  background-color: #593E1A;
   /*background-color: #A97D5D;*/
   /*background-color: #000066;*/
   /*background-color: rgb(140,214,0);*/
   /*background-color: rgb(204,204,204);*/
-  background: url("../img/brown-bg.png");
-  background-size: cover;
+  /*background: url("../img/brown-bg.png");*/
+  /*background-size: cover;*/
   min-height: 880px;
   position: relative;
   overflow: hidden;
@@ -2210,6 +2210,18 @@ body {
   height: 255px;
   background: rgba(255,255,255,1);
 }
+.thriii__landing--slider .carousel-inner .item {
+  -webkit-transition: all 1.4s ease-in-out;
+  -moz-transition:    all 1.4s ease-in-out;
+  -ms-transition:     all 1.4s ease-in-out;
+  -o-transition:      all 1.4s ease-in-out;
+  transition:         all 1.4s ease-in-out;
+}
+.thriii__landing--slider .carousel-control.left, 
+.thriii__landing--slider .carousel-control.right {
+  cursor: default;
+  color: rgba(0,0,0,0.1);
+}
 .thriii__landing--slider .item img {
   display: block;
   width: 65%;
@@ -2230,8 +2242,10 @@ body {
   /*overflow: hidden;*/
   margin: 0 auto;
   height: 437px;
-  width: 100%;
+  max-width: 900px;
   cursor: default;
+  right: 0;
+  left: 0;
 }
 /*url("../img/click-to-play.png") 178px 200px no-repeat,*/
 .thriii__landing--content--inner {
@@ -2242,6 +2256,24 @@ body {
   margin: -20px auto;
   height: 400px;
   width: 85%;
+}
+.thriii__landing--content--inner > a {
+  border-top-right-radius: 9000%;
+  position: absolute;
+  bottom: -20px;
+  right: -30px;
+  width: 260px;
+  height: 110px;
+  background: transparent url("../img/click-to-play.png") center center no-repeat;
+  z-index: 1000;
+  -webkit-transition: background .4s ease-in-out;
+  -moz-transition:    background .4s ease-in-out;
+  -ms-transition:     background .4s ease-in-out;
+  -o-transition:      background .4s ease-in-out;
+  transition:         background .4s ease-in-out;
+}
+.thriii__landing--content--inner > a:hover {
+  background: transparent url("../img/click-to-play-hover.png") center center no-repeat;
 }
 .thriii__landing--content--inner > a > img {
   position: absolute;
@@ -2330,9 +2362,10 @@ body {
 .thriii__landing--columns .f-box i,
 .thriii__landing--columns .f-box:hover {
   -webkit-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
-  -o-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -moz-transition:    all .4s ease-in-out;
+  -ms-transition:     all .4s ease-in-out;
+  -o-transition:      all .4s ease-in-out;
+  transition:         all .4s ease-in-out;
 }
 .thriii__landing--columns .f-box:hover {
   /*background: rgb(140,214,0) url('../img/intuit.gif') 0 -23px no-repeat ;*/
@@ -2350,10 +2383,15 @@ body {
 }
 .thriii__landing--nav {
   z-index: 5000;
+  box-shadow: 0 -11px 38px rgba(255,255,255,.3);
 }
 .thriii__landing--nav, 
 .thriii__landing--nav ul {
-  -webkit-transition: all .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition:    all .3s ease-in-out;
+  -ms-transition:     all .3s ease-in-out;
+  -0-transition:      all .3s ease-in-out;
+  transition:         all .3s ease-in-out;
   background: rgb(140,214,0);
   /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b7a1), color-stop(0%,#752201), color-stop(50%,#8c3310), color-stop(100%,#bf6e4e)); /* Chrome,Safari4+ */*/
   /*background: -webkit-linear-gradient(top, #f0b7a1 0%,#752201 0%,#8c3310 50%,#bf6e4e 100%); /* Chrome10+,Safari5.1+ */*/
@@ -2378,7 +2416,7 @@ body {
   background-size: 270px 55px;
   position: absolute;
   z-index: 100;
-  content: "";
+  content: " ";
   height: 80px;
   margin: 12px 0 0px 0px;
   width: 146px;
@@ -2391,13 +2429,19 @@ body {
 .thriii__landing--header--item a,
 .thriii__landing--nav--item,
 .thriii__landing--nav--item a {
+  -webkit-transition: all .6s ease;
+  -moz-transition:    all .6s ease;
+  -ms-transition:     all .6s ease;
+  -o-transition:      all .6s ease;
+  transition:         all .6s ease;
   color: #fff;
 }
 .thriii__landing--nav--item {
   -webkit-transition: all .2s ease-in-out;
-  -moz-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -moz-transition:    all .2s ease-in-out;
+  -ms-transition:     all .2s ease-in-out;
+  -o-transition:      all .2s ease-in-out;
+  transition:         all .2s ease-in-out;
   /*list-style-type: none;*/
   vertical-align: -webkit-baseline-middle;
   text-align: center;
@@ -2410,9 +2454,21 @@ body {
   height: 100px;
   width: 13.33333%;
 }
-/*.thriii__landing--nav--item .underline {
-  text-decoration: underline;
-}*/
+.thriii__landing--nav--stuck-signup-button {
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition:    all .4s ease-in-out;
+  -ms-transition:     all .4s ease-in-out;
+  -o-transition:      all .4s ease-in-out;
+  transition:         all .4s ease-in-out;
+  position: absolute;
+  right: -200px;
+  top: 40px;
+  list-style-type: none; 
+}
+.thriii__landing--nav--stuck 
+.thriii__landing--nav--stuck-signup-button {
+  right: 20px;
+}
 .thriii__landing--nav--item i {
   margin-top: -5px;
   display: block;
@@ -2436,16 +2492,18 @@ body {
 .thriii__landing--nav--item:hover i:before,
 .thriii__landing--nav--item:hover span {
   -webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  -o-transition: all .6s ease-in-out;
+  -moz-transition:    all .6s ease-in-out;
+  -ms-transition:     all .6s ease-in-out;
+  -o-transition:      all .6s ease-in-out;
+  transition:         all .6s ease-in-out;
   text-shadow: 0 0 1.111px #000;
   opacity: 1;
 }
 .thriii__landing--nav--item:hover i:before {
   -webkit-text-stroke: .5px #000;
-  -mox-text-stroke: .5px #000;
-  -o-text-stroke: .5px #000;
-  text-stroke: .5px #000;
+  -mox-text-stroke:    .5px #000;
+  -o-text-stroke:      .5px #000;
+  text-stroke:         .5px #000;
 }
 .fancybox-skin {
   background: transparent;
@@ -2477,4 +2535,10 @@ body {
 }
 .thriii__shipping {
   background: red;
+}
+.thriii__footer {
+  margin: 0 0 -5px;
+}
+.thriii__footer > .container p {
+  white-space: nowrap;
 }
