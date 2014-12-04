@@ -201,36 +201,39 @@ var Script = function () {
           window.location.name = el;
     }) //  END scroll to section on click
 
-    // Not working. Scrollspy
+    // Custom Scrollspy
     $( window ).on('scroll', function() {
-        var $el1     = $("#sales-orders")
-          , $nav     = $('.thriii__landing--nav--item')
-          , $el2     = $("#warehousing")
-          , $el3     = $("#payments")
-          , $el4     = $("#shipping")
-          , $window  = $(window)
-          , el_pos
-          , el_id;
-        if ($window.scrollTop() + 85 <= 870 && $window.scrollTop() >= 0) {
+        var $nav           = $('.thriii__landing--nav--item')
+          , $windowheight  = $(window).scrollTop() + 130
+          , $el1height     = $("#sales-orders").height()
+          , $el1pos        = $("#sales-orders").position().top
+          , $el2height     = $("#warehousing").height()
+          , $el2pos        = $("#warehousing").position().top
+          , $el3height     = $("#payments").height()
+          , $el3pos        = $("#payments").position().top
+          , $el4height     = $("#shipping").height()
+          , $el4pos        = $("#shipping").position().top;
+
+        if ($windowheight < $el1pos) {
             $nav.removeClass('active')
         } else {
-            if ($el1.position().top >= 880 && $window.scrollTop() + 85 <= 1415) {
+            if (($el1pos <= $windowheight)) {
                 $nav.removeClass('active')
                 $('.sales').addClass('active')
             }
-            if ($el1.offset().top - $(window).scrollTop() < -524) {
+            if (($el2pos <= $windowheight) ) {
                 $nav.removeClass('active')
                 $('.warehouse').addClass('active')
             }
-            if ($el3.offset().top - $(window).scrollTop() - 100 < 15 && $('#payments').offset().top - $(window).scrollTop() - 100 > -630) {
+            if (($el3pos <= $windowheight)) {
                 $nav.removeClass('active')
                 $('.payments').addClass('active')
             }
-            if ($(window).scrollTop() + 100 > 2650) {
+            if ($el4pos <= $windowheight) {
                 $nav.removeClass('active')
                 $('.shipping').addClass('active')
             }
         }
-    }) // End Scroll spy
+    }) // End Scrollspy
 
 }( jQuery ));
