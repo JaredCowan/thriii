@@ -2110,7 +2110,7 @@ body {
   color: #fff;
 }
 .thriii__landing {
-  background-color: #593E1A;
+  background-color: #351C15;
   min-height: 880px;
   position: relative;
   overflow: hidden;
@@ -2225,8 +2225,8 @@ body {
   background: rgb(140,214,0);
 }
 .thriii__landing--content--video {
-  background: url("http://placehold.it/600&text=video") center center no-repeat;
-  /*background: url("http://cdn.papermag.com/uploaded_images/outdoorfilm.gif") center center no-repeat;*/
+  /*background: url("http://placehold.it/600&text=video") center center no-repeat;*/
+  background: url("http://cdn.papermag.com/uploaded_images/outdoorfilm.gif") center center no-repeat;
   background-color: rgb(204,204,204);
   background-size: cover;
   position: absolute;
@@ -2500,25 +2500,30 @@ body {
   padding: 100px 10px 10px; /* We need to adjust for the fixed navbar */
   margin-top: -85px; /* We need to adjust for the fixed navbar */
 }
-.thriii__sales-orders {
-  background: #e44e4e;
-  height: 100vh;
-}
 .thriii__warehousing,
 .thriii__payments,
 .thriii__shipping {
   margin-top: -20px;
   padding: 10px;
+}
+.thriii__sales-orders,
+.thriii__warehousing,
+.thriii__payments,
+.thriii__shipping {
+  min-height: 800px; 
   height: 100vh;
 }
+.thriii__sales-orders {
+  background: #2C3BAD;
+}
 .thriii__warehousing {
-  background: #4e4ee4;
+  background: #595959;
 }
 .thriii__payments {
-  background: pink;
+  background: #580E0B;
 }
 .thriii__shipping {
-  background: red;
+  background: #33221B;
 }
 .thriii__footer {
   background: rgb(140,214,0);

@@ -204,7 +204,7 @@ var Script = function () {
     // Custom Scrollspy
     $( window ).on('scroll', function() {
         var $nav           = $('.thriii__landing--nav--item')
-          , $windowheight  = $(window).scrollTop() + 130
+          , $windowheight  = $(window).scrollTop() + 120
           , $el1height     = $("#sales-orders").height()
           , $el1pos        = $("#sales-orders").position().top
           , $el2height     = $("#warehousing").height()
