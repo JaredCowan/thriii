@@ -203,28 +203,34 @@ var Script = function () {
 
     // Not working. Scrollspy
     $( window ).on('scroll', function() {
-        var el = $(".thriii__content__section")
+        var $el1     = $("#sales-orders")
+          , $nav     = $('.thriii__landing--nav--item')
+          , $el2     = $("#warehousing")
+          , $el3     = $("#payments")
+          , $el4     = $("#shipping")
+          , $window  = $(window)
           , el_pos
           , el_id;
-        for (var i = el.length - 1; i >= 0; i--) {
-            
-            if (el[i].getAttribute('id') === 'sales-orders') {
-                el_pos = $(el[i]).offset().top - window.scrollY
-            } else {
-                el_pos = $(el[i]).offset().top - window.scrollY - 100
+        if ($window.scrollTop() + 85 <= 870 && $window.scrollTop() >= 0) {
+            $nav.removeClass('active')
+        } else {
+            if ($el1.position().top >= 880 && $window.scrollTop() + 85 <= 1415) {
+                $nav.removeClass('active')
+                $('.sales').addClass('active')
             }
-
-            if (el[i].getAttribute('id') === 'sales-orders' && $(el[i]).offset().top - window.scrollY === 0) {
-                el_id = el[i].getAttribute('id');
-                // console.log(el_id);
-            } else if ($(el[i]).offset().top - window.scrollY - 100 === 0) {
-                el_id = el[i].getAttribute('id');
-                // console.log(el_id + ': ' + el_pos);
+            if ($el1.offset().top - $(window).scrollTop() < -524) {
+                $nav.removeClass('active')
+                $('.warehouse').addClass('active')
             }
-        };
+            if ($el3.offset().top - $(window).scrollTop() - 100 < 15 && $('#payments').offset().top - $(window).scrollTop() - 100 > -630) {
+                $nav.removeClass('active')
+                $('.payments').addClass('active')
+            }
+            if ($(window).scrollTop() + 100 > 2650) {
+                $nav.removeClass('active')
+                $('.shipping').addClass('active')
+            }
+        }
     }) // End Scroll spy
 
 }( jQuery ));
-
-
-

@@ -2536,3 +2536,13 @@ body {
 .thriii__footer > .container p {
   white-space: nowrap;
 }
+.thriii__landing--nav .active:before {
+  font-family: "FontAwesome";
+  text-align: center;
+  font-size: 23px;
+  position: absolute;
+  content: "\f0d8";
+  bottom: -1px;
+  right: 0;
+  left: 0;
+}
