@@ -2110,16 +2110,7 @@ body {
   color: #fff;
 }
 .thriii__landing {
-  /*background-color: #e44e4e;*/
-  /*background-color: #4e4ee4;*/
-  /*background-color: #587498;*/
   background-color: #593E1A;
-  /*background-color: #A97D5D;*/
-  /*background-color: #000066;*/
-  /*background-color: rgb(140,214,0);*/
-  /*background-color: rgb(204,204,204);*/
-  /*background: url("../img/brown-bg.png");*/
-  /*background-size: cover;*/
   min-height: 880px;
   position: relative;
   overflow: hidden;
@@ -2150,8 +2141,10 @@ body {
   width: 200px;
 }
 .thriii__landing--header--brand img {
-  padding: 10px 0;
-  width: 200px;
+  margin: 10px 0;
+  width: 140px;
+  float: left;
+  box-shadow: 3px 3px 4px grey;
 }
 .thriii__landing--header--item {
   letter-spacing: .5px;
@@ -2191,8 +2184,6 @@ body {
   display: block;
   margin: 0;
   clear: both;
-  /* Testing only */
-  /*background: rgba(0,0,0,.4);*/
 }
 .thriii__landing--slider .
 .thriii__landing--slider li {
@@ -2234,8 +2225,8 @@ body {
   background: rgb(140,214,0);
 }
 .thriii__landing--content--video {
-  /*background: url("http://placehold.it/600&text=video") center center no-repeat;*/
-  background: url("http://cdn.papermag.com/uploaded_images/outdoorfilm.gif") center center no-repeat;
+  background: url("http://placehold.it/600&text=video") center center no-repeat;
+  /*background: url("http://cdn.papermag.com/uploaded_images/outdoorfilm.gif") center center no-repeat;*/
   background-color: rgb(204,204,204);
   background-size: cover;
   position: absolute;
@@ -2318,12 +2309,6 @@ body {
   margin: 10px 0;
   font-size: 16px;
   color: #000
-}
-.thriii__landing--content--inner--show__details__button {
-  position: absolute;
-  bottom: 10px;
-  margin: 0 auto;
-  width: inherit;
 }
 .thriii__landing--columns {
   position: absolute;
@@ -2420,7 +2405,7 @@ body {
   height: 80px;
   margin: 12px 0 0px 0px;
   width: 146px;
-  left: 2%;
+  left: 0;
 }
 .hide-me {
   display: none;
@@ -2519,7 +2504,6 @@ body {
   background: #e44e4e;
   height: 100vh;
 }
-
 .thriii__warehousing,
 .thriii__payments,
 .thriii__shipping {
@@ -2537,7 +2521,17 @@ body {
   background: red;
 }
 .thriii__footer {
+  background: rgb(140,214,0);
   margin: 0 0 -5px;
+}
+.thriii__footer .social-link-footer li a {
+  background: #fafafa;
+}
+.thriii__footer .social-link-footer li i:before {
+  color: rgb(140,214,0);
+}
+.thriii__footer .social-link-footer li a:hover i:before {
+  color: #505b71;
 }
 .thriii__footer > .container p {
   white-space: nowrap;

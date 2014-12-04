@@ -119,7 +119,7 @@ var Script = function () {
               , pause: false
             });
         });
-    }())
+    })
 
 //    bxslider
 
@@ -225,3 +225,6 @@ var Script = function () {
     }) // End Scroll spy
 
 }( jQuery ));
+
+
+
