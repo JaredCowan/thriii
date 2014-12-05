@@ -2503,18 +2503,101 @@ body {
 .thriii__warehousing,
 .thriii__payments,
 .thriii__shipping {
+  padding-top: 40px;
   margin-top: -20px;
-  padding: 10px;
 }
 .thriii__sales-orders,
 .thriii__warehousing,
 .thriii__payments,
 .thriii__shipping {
   min-height: 800px; 
-  height: 100vh;
+  padding-bottom: 30px;
 }
 .thriii__sales-orders {
   background: #2C3BAD;
+}
+.thriii__sales-orders--container {
+
+}
+.thriii__sales-orders--row {
+  text-align: center;
+}
+.thriii__sales-orders--row [class^="col-"] {
+  margin: 10px auto;
+}
+.thriii__sales-orders--row {
+  margin: 5px 0;
+  display: inline-block;
+  width: 100%;
+  min-height: 180px;
+  overflow: hidden;
+}
+.thriii__sales-orders--row ul {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.thriii__sales-orders--row li {
+  width: 50%;
+  float: left;
+  clear: none;
+}
+.thriii__sales-orders--row:first-child aside {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+img.sales-feature-img {
+  width: 75%;
+}
+.sales-feature,
+.sales-feature-content,
+.sales-feature-content ~ div {
+  padding: 0;
+}
+.sales-feature-li-text {
+  text-align: left;
+}
+@media (max-width: 991px) {
+  img.sales-main-img {
+    min-width: 200px;
+    width: 60%;
+  }
+  .thriii__sales-orders--row .sales-feature-li-text {
+    width: 65%;
+  }
+  .thriii__sales-orders--row .sales-feature-li, img.sales-feature-img {
+    width: 35%;
+  }
+}
+@media (max-width: 841px) {
+  .sales-feature [class^="col-"] {
+    width: 100%;
+  }
+  .thriii__sales-orders--row .sales-feature-li,
+  img.sales-feature-img {
+    height: 80px;
+    width: 80px;
+  }
+  .thriii__sales-orders--row .sales-feature-li {
+    margin-right: 20px;
+  }
+  .sales-feature-li-text {
+    padding: 10px 5px 10px 0;
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  img.sales-main-img {
+    min-width: 300px;
+  }
+}
+@media (max-width: 440px) {
+  .thriii__sales-orders--row ul {
+    margin-left: -30px;
+  }
 }
 .thriii__warehousing {
   background: #595959;
