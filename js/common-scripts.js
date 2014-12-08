@@ -166,7 +166,7 @@ var Script = function () {
     "use strict";
 
 //  sticky nav
-    $( window ).on('scroll', function() {
+    $( window ).on('scroll load', function() {
         var nav      = $( ".thriii__landing--nav" )
           , nav_cont = $( ".thriii__landing" ).innerHeight() - $(window).scrollTop()
           , nav_pos  = nav.offset().top - $( window ).scrollTop();
@@ -202,7 +202,7 @@ var Script = function () {
     }) //  END scroll to section on click
 
     // Custom Scrollspy
-    $( window ).on('scroll', function() {
+    $( window ).on('scroll load', function() {
         var $nav           = $('.thriii__landing--nav--item')
           , $windowheight  = $(window).scrollTop() + 120
           , $el1height     = $("#sales-orders").height()
@@ -220,7 +220,7 @@ var Script = function () {
             if (($el1pos <= $windowheight)) {
                 $nav.removeClass('active')
                 $('.sales').addClass('active')
-            }
+                }
             if (($el2pos <= $windowheight) ) {
                 $nav.removeClass('active')
                 $('.warehouse').addClass('active')

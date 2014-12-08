@@ -1,6 +1,5 @@
 var Script = function () {
 
-
     var doughnutData = [
         {
             value: 30,
