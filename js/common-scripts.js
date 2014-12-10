@@ -115,6 +115,7 @@ var Script = function () {
         thriiiCarousel.each(function(){
             $(this).carousel({
                 interval: 4000
+              , duration: 700
               , keyboard: false 
               , pause: false
             });
