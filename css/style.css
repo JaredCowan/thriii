@@ -2782,9 +2782,9 @@ img.sales-feature-img {
   }
 }
 @media (max-width: 768px) {
-  /*.feature-wrapper:nth-child(odd) .feature-hero {
+  .feature-wrapper:nth-child(odd) .feature-hero {
     float: right;
-  }*/
+  }
   .feature-content {
     max-width: 400px;
   }
