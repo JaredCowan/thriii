@@ -2633,3 +2633,42 @@ img.sales-feature-img {
   right: 0;
   left: 0;
 }
+/* test page */
+.feature-wrapper {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: left;
+  transition: all .5s ease-in-out;
+}
+.feature-content {
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .feature-content {
+    text-align: center;
+    max-width: 330px;
+  }
+  .feature-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  .feature-wrapper:nth-child(odd) .tester {
+    float: right;
+  }
+  .feature-content {
+    
+    max-width: 400px;
+  }
+}
+/* Test page end */
+
+
+
+
+
+
