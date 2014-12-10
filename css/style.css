@@ -2767,10 +2767,6 @@ img.sales-feature-img {
   margin-left: auto;
   text-align: left;
 }
-#warehousing .feature-section-title-img,
-#shipping .feature-section-title-img {
-  float: right !important;
-}
 @media (max-width: 1200px) {
   .feature-content {
     text-align: center;
@@ -2779,6 +2775,12 @@ img.sales-feature-img {
   .feature-img {
     margin-right: auto;
     margin-left: auto;
+  }
+}
+@media (min-width: 1200px) {
+  #warehousing .feature-section-title-img,
+  #shipping .feature-section-title-img {
+    float: right;
   }
 }
 @media (max-width: 768px) {
