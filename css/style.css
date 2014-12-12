@@ -2793,6 +2793,11 @@ img.sales-feature-img {
   }
 }
 
+/* Pricing */
+.pricing-table .popover-title,
+.pricing-table .popover-content {
+  color: black;
+}
 /* Test page end */
 
 
