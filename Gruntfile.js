@@ -180,6 +180,15 @@ module.exports = function (grunt) {
       },
       distimg: {
         files: {
+          "./": ["img/*.jpg", "img/*.jpeg", "img/*.png", "img/*.gif", "img/*.ico"]
+        },
+        options: {
+          path: '<%= secret.path %>/img/',
+          srcBasePath: "img/"
+        }
+      },
+      distallimg: {
+        files: {
           "./": "img/**"
         },
         options: {
@@ -214,8 +223,11 @@ module.exports = function (grunt) {
   // SFTP Common Files
   grunt.registerTask('ftpall', ['autoprefixer', 'sftp:distview', 'sftp:distcss', 'sftp:distjs']);
 
-  // SFTP Images
+  // SFTP Common Images
   grunt.registerTask('ftpimg', ['sftp:distimg']);
+
+  // SFTP All Images
+  grunt.registerTask('ftpallimg', ['sftp:distallimg']);
 
   // SFTP Assets
   grunt.registerTask('ftpasset', ['sftp:distasset']);
