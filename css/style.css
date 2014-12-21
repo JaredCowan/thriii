@@ -2160,13 +2160,29 @@ body {
           box-shadow: 3px 3px 4px grey;
 }
 .thriii__landing--header--brand .nav-logo-with-name {
-
+  margin-left: 1px;
 }
 .thriii__landing--header--item {
   letter-spacing: .5px;
   margin-right: 15px;
   font-size: 15px;
   padding: 10px; 
+}
+.header-top-link,
+.header-top-link-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 13%;
+  background-color: transparent;
+  z-index: 99999;
+}
+@media screen and (max-width: 552px) {
+  .header-top-link-fixed {
+    width: 1px;
+    display: none;
+  }
 }
 .thriii__landing--header--item:hover:not(:last-child),
 .thriii__landing--header--item:hover:not(:last-child) a {
@@ -2551,6 +2567,14 @@ body {
 .thriii__landing--nav--stuck 
 .thriii__landing--nav--stuck-signup-button {
   right: 20px;
+}
+@media (max-width: 620px) {
+  .thriii__landing--nav--stuck .thriii__landing--nav--stuck-signup-button {
+    right: -15px;
+  }
+  .thriii__landing--nav--stuck-signup-button {
+    transform: rotate(-90deg);
+  }
 }
 .thriii__landing--nav--item i {
   margin-top: -5px;
