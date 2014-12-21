@@ -2169,7 +2169,7 @@ body {
   padding: 10px; 
 }
 .header-top-link,
-.header-top-link-fixed {
+.thriii__landing--nav--stuck .header-top-link-fixed {
   position: absolute;
   top: 0;
   left: 0;
@@ -2179,7 +2179,7 @@ body {
   z-index: 99999;
 }
 @media screen and (max-width: 552px) {
-  .header-top-link-fixed {
+  .thriii__landing--nav--stuck .header-top-link-fixed {
     width: 1px;
     display: none;
   }
