@@ -17,7 +17,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-responsive.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="has_js">
     <!--header start-->
     <header class="header-frontend">
       <div class="navbar navbar-default navbar-fixed-top">
@@ -65,157 +65,107 @@
     <!--breadcrumbs end-->
     <!--main content start-->
     <section id="main-content">
+      <div class="text-center feature-head">
+          <h1> Easy Signup </h1>
+          <p><strong>No credit card required.</strong> <br> No risk. No hidden fees. Cancel at anytime. </p>
+        </div>
       <section class="wrapper site-min-height">
         <!-- page start-->
         <div class="row">
           <div class="center-block">
             <section class="panel">
               <div class="panel-body">
-                <div class="stepy-tab">
-                  <ul id="default-titles" class="stepy-titles clearfix">
-                    <li id="default-title-0" class="current-step">
-                      <div>Step 1</div>
-                    </li>
-                    <li id="default-title-1" class="">
-                      <div>Step 2</div>
-                    </li>
-                    <li id="default-title-2" class="">
-                      <div>Step 3</div>
-                    </li>
-                  </ul>
-                </div>
-                <form class="form-horizontal" id="default">
-                  <fieldset title="Step1" class="step" id="default-step-0">
-                    <legend> </legend>
+                <form class="form-horizontal thriii-signup-form" id="default">
+                  <fieldset>
+                   <legend></legend>
                     <div class="form-group">
-                      <label class="col-lg-2 control-label">Full Name</label>
-                      <div class="col-lg-10">
-                        <input type="text" value="John Doe" class="form-control" placeholder="Full Name">
+                      <div class="col-xs-12">
+                        <label class="col-xs-12 control-label">Account Type</label>
+                        <select class="form-control m-bot15">
+                          <option>Thriii Books - $30/month</option>
+                          <option>Thriii Core - $50/month</option>
+                          <option>Thriii MicroERP - $70/month</option>
+                        </select>
+                      </div>
+                      <div class="clearfix"> </div>
+                      <div class="col-xs-12 col-sm-6 first-name">
+                      <label class="col-xs-12 control-label">First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name" autofocus>
+                      </div>
+                      <div class="col-xs-12 col-sm-6">
+                      <label class="col-xs-12 control-label">Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-lg-2 control-label">Email Address</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" value="johndoe@email.com" placeholder="Email Address">
+                      <div class="col-lg-12">
+                        <label class="col-xs-12 control-label">Company Name</label>
+                        <input type="text" class="form-control" placeholder="Company Name">
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="col-lg-2 control-label">User Name</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" value="johndoe" placeholder="Username">
+                      <div class="col-lg-12">
+                        <label class="col-xs-12 control-label">Email Address</label>
+                        <input type="text" class="form-control" placeholder="Email Address">
                       </div>
                     </div>
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <label class="col-xs-12 control-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Password" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <label class="col-xs-12 control-label">Confirm Password</label>
+                        <input type="password" class="form-control" placeholder="Confirm Password" autocomplete="off">
+                      </div>
+                    </div>
+                    <div class="checkboxes">
+                    <label class="label_check" for="signup-terms">
+                      <input name="signup-terms" id="signup-terms" value="1" type="checkbox"> I agree to the terms &amp; conditions.
+                    </label>
+                  </div>
                   </fieldset>
-                  <fieldset title="Step 2" class="step" id="default-step-1" >
-                    <legend> </legend>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Phone</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" value="310-123-1444" placeholder="Phone">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Mobile</label>
-                      <div class="col-lg-10">
-                        <input type="text" class="form-control" value="310-555-1313" placeholder="Mobile">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Address</label>
-                      <div class="col-lg-10">
-                        <textarea class="form-control" cols="60" rows="5">123 Street Venice Beach, CA, 90266</textarea>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <fieldset title="Step 3" class="step" id="default-step-2" >
-                    <legend> </legend>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Full Name</label>
-                      <div class="col-lg-10">
-                        <p class="form-control-static">John Doe</p>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Email Address</label>
-                      <div class="col-lg-10">
-                        <p class="form-control-static">johndoe@email.com</p>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">User Name</label>
-                      <div class="col-lg-10">
-                        <p class="form-control-static">johndoe</p>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Phone</label>
-                      <div class="col-lg-10">
-                        <p class="form-control-static">310-123-1444</p>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Mobile</label>
-                      <div class="col-lg-10">
-                        <p class="form-control-static">310-555-1313</p>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="col-lg-2 control-label">Address</label>
-                      <div class="col-lg-10">
-                        <p class="form-control-static">
-                          123 Street
-                          Venice Beach, CA 90266
-                          P: (310) 555-1313 
-                          P: (310) 123-1444 
-                        </p>
-                      </div>
-                    </div>
-                  </fieldset>
-                    <a class="finish btn btn-danger" href="dashboard.html">Finish</a>
+                    <a class="finish btn btn-block btn-danger" href="dashboard.html">Sign Me Up!</a>
                 </form>
               </div>
             </section>
           </div>
         </div>
 
-<!--footer start-->
-            <footer class="footer">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-3 col-sm-3">
-                     <h1>contact info</h1>
-                     <address>
-                         <p>Address: 123 10th Street</p>
-                         <p>Venice Beach, CA, 90266
-                         <p>Phone : (310) 123-1444</p>
-                         <p>Fax : (310) 555-1313</p>
-                         <p>Email : <a href="javascript:;">support@thriii.com</a></p>
-                     </address>
-                 </div>
-                 <div class="col-lg-5 col-sm-5">
-                     <h1>latest tweet</h1>
-                     <div class="tweet-box">
-                         <i class="fa fa-twitter"></i>
-                         <em>Please follow <a href="javascript:;">@thriii</a> for all future updates of us! <a href="javascript:;">twitter.com/thriii</a></em>
-                     </div>
-                 </div>
-                  <div class="col-lg-3 col-sm-3 col-lg-offset-1">
-                    <h1>stay connected</h1>
-                    <ul class="social-link-footer list-unstyled">
-                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                      <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                      <li><a href="#"><i class="fa fa-github"></i></a></li>
-                      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                  </div>
+        <footer class="footer thriii__footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-3">
+                <h1>contact info</h1>
+                <address>
+                  <p>Address: 123 10th Street</p>
+                  <p>Venice Beach, CA, 90266
+                  </p><p>Phone : (310) 123-1444</p>
+                  <p>Fax : (310) 555-1313</p>
+                  <p>Email : <a href="javascript:;">support@thriii.com</a></p>
+                </address>
+              </div>
+              <div class="col-lg-5 col-sm-5">
+                <h1>latest tweet</h1>
+                <div class="tweet-box">
+                  <i class="fa fa-twitter"></i>
+                  <em>Please follow <a href="javascript:;">@thriii</a> for all future updates of us! <a href="javascript:;">twitter.com/thriii</a></em>
                 </div>
               </div>
-            </footer>
-            <!--footer end-->            
+              <div class="col-lg-3 col-sm-3 col-lg-offset-1">
+                <h1>stay connected</h1>
+                <ul class="social-link-footer list-unstyled">
+                  <li><a href="javascript:;"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="javascript:;"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="javascript:;"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="javascript:;"><i class="fa fa-github"></i></a></li>
+                </ul>
+              </div>
+            </div> <!-- END Row -->
+          </div> <!-- END Container -->
+        </footer><!-- END thriii__footer -->
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
             <script src="js/jquery-migrate-1.2.1.min.js"></script>
             <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
@@ -229,7 +179,6 @@
             <!--custom tagsinput-->
             <script src="js/jquery.tagsinput.js"></script>
             <!--custom checkbox & radio-->
-            <script type="text/javascript" src="js/ga.js"></script>
             <script type="text/javascript" src="assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
             <script type="text/javascript" src="assets/bootstrap-daterangepicker/date.js"></script>
             <script type="text/javascript" src="assets/bootstrap-daterangepicker/daterangepicker.js"></script>

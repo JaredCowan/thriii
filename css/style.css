@@ -2972,6 +2972,78 @@ overflow: visible;
 /* Test page end */
 
 
+/*checkbox & radio style*/
+
+
+.checkboxes label, .radios label {
+  display: block;
+  cursor: pointer;
+  line-height: 20px;
+  padding-bottom: 7px;
+  font-weight: 300;
+}
+
+.radios {
+  padding-top: 18px;
+}
+
+.label_check input,
+.label_radio input {
+  margin-right: 5px;
+}
+
+.has-js .label_check,
+.has-js .label_radio {
+  padding-left: 34px;
+}
+
+.has-js .label_radio {
+  background: url(../img/checkbox/radio-off.png) no-repeat;
+}
+
+.has-js .label_check {
+  background: url(../img/checkbox/check-off.png) no-repeat;
+}
+
+.has-js label.c_on {
+  background: url(../img/checkbox/check-on.png) no-repeat;
+}
+
+.has-js label.r_on {
+  background: url(../img/checkbox/radio-on.png) no-repeat;
+}
+
+.has-js .label_check input,
+.has-js .label_radio input {
+  position: absolute;
+  left: -9999px;
+}
+
+
+
+/* Signup Page */
+.thriii-signup-form {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.thriii-signup-form .label_check {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+}
+.thriii-signup-form .control-label {
+  padding-right: 0;
+  padding-left: 0;
+}
+@media (max-width: 768px) {
+  .thriii-signup-form .first-name {
+    margin-bottom: 13px;
+  }
+}
+/* End Signup Page */
 
 
 
