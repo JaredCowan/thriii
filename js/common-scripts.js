@@ -33,8 +33,8 @@ var Script = function () {
 
 //    nicescroll
     
-    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
-    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#000", cursorwidth: '6', cursorborderradius: '10px', background: '#404040', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
+    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#8cd600", cursorwidth: '9', cursorborderradius: '10px', background: '#323232', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
+    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#8cd600", cursorwidth: '9', cursorborderradius: '10px', background: '#323232', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
 
 //    sidebar toggle
 
