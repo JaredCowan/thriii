@@ -166,7 +166,10 @@ var Script = function () {
 ;(function($) {
     "use strict";
 
-//  sticky nav
+var url = window.location.href.indexOf("index.html");
+
+if (url != -1) {
+    //  sticky nav
     $( window ).on('scroll load', function() {
         var nav      = $( ".thriii__landing--nav" )
           , nav_cont = $( ".thriii__landing" ).innerHeight() - $(window).scrollTop()
@@ -180,7 +183,7 @@ var Script = function () {
     }) //  END sticky nav
  
 
-//  scroll to page section on click
+    //  scroll to page section on click
     $( '.thriii__landing--nav--item a' ).on('click', function(e) {
         e.preventDefault();
         var el      = $( this ).attr( 'href' )
@@ -236,6 +239,8 @@ var Script = function () {
             }
         }
     }) // End Scrollspy
+} // Close if
+
 
 }( jQuery ));
 
