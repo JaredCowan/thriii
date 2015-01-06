@@ -2894,12 +2894,14 @@ img.sales-feature-img {
 .pricing-table .price-actions .btn {
   background-color: #2c3bad;
   opacity: .80;
-  box-shadow: .7px .7px 0px .7px #777 !important;
+  -webkit-box-shadow: .7px .7px 0px .7px #777 !important;
+          box-shadow: .7px .7px 0px .7px #777 !important;
 }
 .pricing-table .price-actions .btn:hover {
   background-color: #2c3bad;
   opacity: 1;
-  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 .pricing-table ul li {
   font-family: 'Source Sans Pro', sans-serif;
