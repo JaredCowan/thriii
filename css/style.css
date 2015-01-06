@@ -2871,10 +2871,17 @@ img.sales-feature-img {
 }
 .pricing-table .popover-title,
 .pricing-table .popover-content {
-  color: black;
+  color: #000;
 }
 .pricing-table.most-popular {
   background-color: rgb(140,214,0);
+}
+.pricing-head h1 {
+  font-size: 22px;
+  color: #494949;
+}
+.most-popular .pricing-head h1 {
+  color: #fff;
 }
 .pricing-head h2,
 .most-popular h2 {
