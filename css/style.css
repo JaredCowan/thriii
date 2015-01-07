@@ -2893,6 +2893,7 @@ img.sales-feature-img {
 }
 .pricing-table .price-actions .btn {
   background-color: #2c3bad;
+  text-shadow: 2px 2px 1px #2c3bad;
   opacity: .80;
   -webkit-box-shadow: .7px .7px 0px .7px #777 !important;
           box-shadow: .7px .7px 0px .7px #777 !important;
