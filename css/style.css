@@ -2373,11 +2373,11 @@ body {
   text-shadow: 0 1px 1px #fff;
   margin: 10px 0;
   font-size: 16px;
-  color: #000
+  color: #000;
 }
 .thriii__landing--columns {
   position: absolute;
-  top: 500px;
+  top: 435px;
   right: 0;
   left: 0;
   margin: 0 auto;
@@ -2527,7 +2527,8 @@ body {
   margin: 12px 0 0 0;
   width: 146px;
   left: 0;
-  box-shadow: 3px 3px 4px #777;
+  -webkit-box-shadow: 3px 3px 4px #777;
+          box-shadow: 3px 3px 4px #777;
   -webkit-transition: all .3s ease-in-out;
        -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
