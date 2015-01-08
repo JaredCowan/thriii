@@ -2517,10 +2517,9 @@ body {
 }
 .thriii__landing--nav--stuck:before {
   background-repeat: no-repeat;
-  background-image: none, url("../img/thriii-logo.png");
-  background-position-x: -67px;
-  -webkit-background-size: 270px 55px;
-          background-size: 270px 55px;
+  background-image: none, url("../img/logo-name-vc.jpg");
+  -webkit-background-size: 148px 51px;
+          background-size: 148px 51px;
   position: absolute;
   z-index: 100;
   content: " ";
