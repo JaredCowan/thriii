@@ -2495,8 +2495,8 @@ body {
 .thriii__landing--nav, 
 .thriii__landing--nav ul {
   -webkit-transition: all .3s ease-in-out;
-  -o-transition:         all .3s ease-in-out;
-     transition:         all .3s ease-in-out;
+  -o-transition:      all .3s ease-in-out;
+     transition:      all .3s ease-in-out;
   background: rgb(140,214,0);
   /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b7a1), color-stop(0%,#752201), color-stop(50%,#8c3310), color-stop(100%,#bf6e4e)); /* Chrome,Safari4+ */
   /*background: -webkit-linear-gradient(top, #f0b7a1 0%,#752201 0%,#8c3310 50%,#bf6e4e 100%); /* Chrome10+,Safari5.1+ */
@@ -2515,18 +2515,21 @@ body {
   position: fixed;
   top: 0;
 }
-.thriii__landing--nav--stuck:before {
-  background-repeat: no-repeat;
-  background-image: none, url("../img/logo-name-vc.jpg");
-  -webkit-background-size: 148px 51px;
-          background-size: 148px 51px;
+.stick-navbar-logo {
+  margin-left: -230px;
+  height: 60px;
+  width: 146px;
+}
+.thriii__landing--nav--stuck .stick-navbar-logo {
   position: absolute;
   z-index: 100;
-  content: " ";
-  height: 80px;
-  margin: 12px 0 0px 0px;
+  height: 60px;
+  margin: 12px 0 0 0;
   width: 146px;
   left: 0;
+  -webkit-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
 }
 .hide-me {
   display: none;
