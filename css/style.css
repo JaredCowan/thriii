@@ -2935,10 +2935,13 @@ img.sales-feature-img {
   font-size: 15px;
   text-rendering: optimizeLegibility;
   text-shadow: 0 .1px 0px #323232;
+  margin-top: 25px;
 }
 .most-popular ul li {
   border-bottom-color: #2c3bad !important;
-  text-shadow: 0 0 .3px #000;
+  /*text-shadow: 0 0 .3px #000;*/
+  margin-top: 0;
+  color: #000;
 }
 .pricing-table .add-ons {
 cursor: default;
