@@ -2889,7 +2889,17 @@ img.sales-feature-img {
 }
 .pricing-head h2,
 .most-popular h2 {
+  padding: 40px 0;
   background-color: #2c3bad;
+}
+.pricing-head h5 {
+  margin-top: -45px;
+  margin-right: -125px;
+  color: #777;
+}
+.most-popular .pricing-head  h5 {
+  margin-right: 30px;
+  text-align: right;
 }
 .pricing-table .price-actions .btn {
   background-color: #2c3bad;
