@@ -2527,9 +2527,26 @@ body {
   margin: 12px 0 0 0;
   width: 146px;
   left: 0;
+  box-shadow: 3px 3px 4px #777;
   -webkit-transition: all .3s ease-in-out;
        -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
+}
+@media all and (max-width: 735px) {
+  .thriii__landing--nav--stuck .stick-navbar-logo {
+    height: 45px;
+    width: 110px;
+  }
+}
+@media all and (max-width: 610px) {
+  .thriii__landing--nav--stuck .stick-navbar-logo {
+    margin-left: -67px;
+  }
+}
+@media all and (max-width: 453px) {
+  .thriii__landing--nav--stuck .stick-navbar-logo {
+    margin-left: -200px;
+  }
 }
 .hide-me {
   display: none;
@@ -2617,11 +2634,7 @@ body {
   -o-text-stroke:      .5px #000;
   text-stroke:         .5px #000;
 }
-@media (max-width: 720px) {
-  .thriii__landing--nav--stuck:before {
-    display: none;
-  }
-}
+
 @media (max-width: 452px) {
   .thriii__landing--nav--item:first-child {
     margin-left: 30px;
