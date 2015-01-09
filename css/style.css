@@ -2461,7 +2461,7 @@ body {
   text-align: justify;
 }
 .thriii__landing--columns .f-box {
-  padding: 2px;
+  padding: 10px;
   height: 135px !important;
   max-width: 254px;
 }
@@ -2476,7 +2476,7 @@ body {
   transition:         all .4s ease-in-out;
 }
 .thriii__landing--columns .f-box:hover {
-  background: rgb(140,214,0);
+  background: #fff;
 }
 .thriii__landing--columns .f-box:hover h2 {
   color: rgb(64,64,64);
@@ -2484,9 +2484,9 @@ body {
 .thriii__landing--columns .f-box i {
   color: rgb(140,214,0);
 }
-.thriii__landing--columns .f-box:hover i {
+/*.thriii__landing--columns .f-box:hover i {
   color: #fff;
-}
+}*/
 .thriii__landing--nav {
   z-index: 5000;
   -webkit-box-shadow: 0 -11px 38px rgba(255,255,255,.3);
