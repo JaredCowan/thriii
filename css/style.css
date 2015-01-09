@@ -3145,7 +3145,8 @@ overflow: visible;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   cursor: default;
-  box-shadow: -1px 1px 6px #000;
+  -webkit-box-shadow: -1px 1px 6px #000;
+          box-shadow: -1px 1px 6px #000;
   color: #000;
 }
 .back-to-top > a {

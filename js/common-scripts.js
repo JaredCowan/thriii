@@ -243,12 +243,13 @@ if (_url != -1 || _path) {
   } // Close if
 
     // fixed back-to-top link
-    var $topLink   = $(".back-to-top"); // Set variable of element
+    var $topLink      = $(".back-to-top") // Set variable of element
+      , $windowHeight = $(window).innerHeight() - 130; // Get the height of window
     $topLink.hide(); // Initially hide element
 
     $(window).on("scroll", function(e) { // Spy on scroll position to show/hide element
         var $windowPos = $(window).scrollTop();
-        if ($windowPos > 550) {
+        if ($windowPos > $windowHeight) {
             $topLink.show();
         } else {
             $topLink.hide();
