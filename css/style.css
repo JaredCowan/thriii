@@ -251,11 +251,11 @@ a, a:hover, a:focus {
 }
 
 ::selection {
-  background: #F77B6F;
+  background: rgba(0, 0, 0, .5);
   color: #fff;
 }
 ::-moz-selection {
-  background: #F77B6F;
+  background: rgba(0, 0, 0, .5);
   color: #fff;
 }
 
@@ -2935,16 +2935,18 @@ img.sales-feature-img {
   font-size: 15px;
   text-rendering: optimizeLegibility;
   text-shadow: 0 .1px 0px #323232;
+}
+.pricing-table ul li:first-child {
   margin-top: 25px;
 }
 .most-popular ul li {
   border-bottom-color: #2c3bad !important;
   /*text-shadow: 0 0 .3px #000;*/
-  margin-top: 0;
+  margin-top: 0 !important;
   color: #000;
 }
 .pricing-table .add-ons {
-cursor: default;
+  cursor: default;
 }
 .pricing-table .add-on-header {
   margin: 5px 0;
