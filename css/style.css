@@ -2404,7 +2404,7 @@ body {
   .thriii__landing--content--inner > a,
   .thriii__landing--content--inner > a:hover,
   .thriii__landing--content--inner > a:focus {
-    bottom: -120px;
+    bottom: -55px;
     -webkit-background-size: 80% 80%;
             background-size: 80%;
   }
@@ -2821,6 +2821,22 @@ img.sales-feature-img {
   -webkit-transition: all .5s ease-in-out;
        -o-transition: all .5s ease-in-out;
           transition: all .5s ease-in-out;
+}
+.feature-title {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  display: block;
+  font-family: 'Source Sans Pro';
+  font-size: 23px;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 1px 1px #000;
+  letter-spacing: 0.4px;
+  text-decoration: underline;
+  padding-bottom: 4px;
+  text-rendering: optimizeLegibility;
 }
 .feature-content {
   max-width: 90%;
