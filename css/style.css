@@ -2897,6 +2897,9 @@ img.sales-feature-img {
 }
 
 /* Pricing */
+.pricing-container {
+  margin-top: 100px;
+}
 .feature-head {
   cursor: default;
 }
