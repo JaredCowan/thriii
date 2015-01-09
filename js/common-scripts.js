@@ -33,8 +33,8 @@ var Script = function () {
 
 //    nicescroll
     
-    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#8cd600", cursorwidth: '9', cursorborderradius: '10px', background: '#323232', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
-    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#8cd600", cursorwidth: '9', cursorborderradius: '10px', background: '#323232', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
+    $(document).ready(function(){$("#sidebar").niceScroll({styler:"fb",cursorcolor:"#8cd600", cursorwidth: '9', cursorborderradius: '0px', background: '#323232', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
+    $(document).ready(function(){$("html").niceScroll({styler:"fb",cursorcolor:"#8cd600", cursorwidth: '9', cursorborderradius: '0px', background: '#323232', spacebarenabled:false,  cursorborder: '', zindex: '9000'});});
 
 //    sidebar toggle
 
@@ -151,10 +151,10 @@ var Script = function () {
 
     if ($(".custom-bar-chart")) {
         $(".bar").each(function () {
-            var i = $(this).find(".value").html();
+            var $value = $(this).find(".value").html();
             $(this).find(".value").html("");
             $(this).find(".value").animate({
-                height: i
+                height: $value
             }, 2000)
         })
     }
@@ -209,7 +209,7 @@ if (_url != -1 || _path) {
     // Custom Scrollspy
     $( window ).on('scroll load', function() {
         var $nav           = $('.thriii__landing--nav--item')
-          , $windowheight  = $(window).scrollTop() + 120
+          , $windowheight  = $(window).scrollTop() + 130
           , $el1height     = $("#sales-orders").height()
           , $el1pos        = $("#sales-orders").position().top
           , $el2height     = $("#warehousing").height()
@@ -240,15 +240,22 @@ if (_url != -1 || _path) {
             }
         }
     }) // End Scrollspy
-} // Close if
+  } // Close if
 
+    // fixed back-to-top link
+    var $topLink   = $(".back-to-top"); // Set variable of element
+    $topLink.hide(); // Initially hide element
+
+    $(window).on("scroll", function(e) { // Spy on scroll position to show/hide element
+        var $windowPos = $(window).scrollTop();
+        if ($windowPos > 550) {
+            $topLink.show();
+        } else {
+            $topLink.hide();
+        }
+    }) // Close
 
 }( jQuery ));
-
-
-
-
-
 
 
 

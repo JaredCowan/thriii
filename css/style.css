@@ -3133,5 +3133,27 @@ overflow: visible;
 }
 /* End Signup Page */
 
+.back-to-top {
+  display: none;
+  padding-left: 10px;
+  width: 60px;
+  height: 20px;
+  position: fixed;
+  bottom: 7px;
+  right: 0;
+  background-color: #fff;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  cursor: default;
+  box-shadow: -1px 1px 6px #000;
+  color: #000;
+}
+.back-to-top > a {
+  /*display: block;*/
+  margin-left: -10px;
+  height: inherit;
+  position: fixed;
+  width: inherit;
+}
 
 
