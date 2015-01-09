@@ -166,9 +166,10 @@ var Script = function () {
 ;(function($) {
     "use strict";
 
-var url = window.location.href.indexOf("index.html");
+var _url  = window.location.href.indexOf("index.html")
+  , _path = window.location.pathname == "/thriii/";
 
-if (url != -1) {
+if (_url != -1 || _path) {
     //  sticky nav
     $( window ).on('scroll load', function() {
         var nav      = $( ".thriii__landing--nav" )
