@@ -2958,6 +2958,11 @@ img.sales-feature-img {
 .pricing-table ul li:first-child {
   margin-top: 25px;
 }
+.pricing-table ul li:nth-child(3):not(.most-popular) {
+}
+.pricing-even-3-row {
+  padding: 2.4em 0 !important;
+}
 .most-popular ul li {
   border-bottom-color: #2c3bad !important;
   /*text-shadow: 0 0 .3px #000;*/
@@ -3056,13 +3061,13 @@ overflow: visible;
   background-color: #e7e7e7;
   color: #000;
 }
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .pricing-table.most-popular ul.add-ons {
     margin-top: 52px;
   }
-}
-/* Test page end */
+}*/
 
+/* Test page end */
 
 /*checkbox & radio style*/
 
