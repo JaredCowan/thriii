@@ -107,13 +107,13 @@ body {
 }
 
 .form-signin .btn-login {
-  background: #f67a6e;
+  background: #2c3bad;
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
-  -webkit-box-shadow: 0 4px #e56b60;
-          box-shadow: 0 4px #e56b60;
+  -webkit-box-shadow: 0 4px #2c3bad;
+          box-shadow: 0 4px #2c3bad;
   margin-bottom: 20px;
 }
 

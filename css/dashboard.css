@@ -155,8 +155,6 @@ ul.dropdown-menu-form input[type="checkbox"] {
 label.highlight {
   width: 100%;
   height: inherit;
-  color: #000;
-  background-color: #E9E9E9;
   padding-top: 3px;
 }
 ul.dropdown-menu-form li:last-child {
@@ -185,19 +183,19 @@ ul.dropdown-menu-form li:last-child {
 }
 #dashboard-sub-menu #menu li a:hover {
   background-color: #8CD600;
-  padding: 5px 9px;
-  font-weight: 600;
+  /*padding: 5px 9px;*/
+  /*font-weight: 600;*/
   color: #000;
 }
 #dashboard-sub-menu #menu li a:focus {
   background-color: #8CD600;
-  font-weight: 600;
+  /*font-weight: 600;*/
   color: #000;
 }
 #dashboard-sub-menu #menu li.active a {
   background-color: #8CD600;
   color: #000;
-  font-weight: 600;
+  /*font-weight: 600;*/
 }
 #sub-menu-list {
   margin-left: 3px;
