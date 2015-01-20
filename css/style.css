@@ -44,7 +44,7 @@ body {
 }
 .header-frontend,
 .navbar-collapse ul.navbar-nav {
-  margin-right: 50%!important;
+  margin-right: 40%!important;
 }
 /*login page*/
 
@@ -2958,10 +2958,44 @@ img.sales-feature-img {
 .pricing-table ul li:first-child {
   margin-top: 25px;
 }
-.pricing-table ul li:nth-child(3):not(.most-popular) {
-}
-.pricing-even-3-row {
+/*.pricing-even-3-row {
   padding: 2.4em 0 !important;
+}*/
+@media all and (max-width: 1200px) {
+  .first-pricing-row li:nth-child(1),
+  .second-pricing-row li:nth-child(1) {
+    padding: 1.8em 0 !important;
+  }
+  .first-pricing-row li:nth-child(3),
+  .second-pricing-row li:nth-child(3) {
+    padding: 3em 0 !important;
+  }
+  .second-pricing-row li:nth-child(5) {
+    padding: 1.8em 0 !important;
+  }
+}
+@media all and (max-width: 992px) {
+  .thrid-pricing-row li:nth-child(1) {
+    padding: 1.7em 0 !important;
+  }
+  .first-pricing-row li:nth-child(5),
+  .first-pricing-row li:nth-child(8),
+  .first-pricing-row li:nth-child(9),
+  .thrid-pricing-row li:nth-child(5) {
+    padding: 1.7em 0 !important;
+  }
+  .first-pricing-row li:nth-child(3) {
+    padding: 3.7em 0 !important;
+  }
+  .second-pricing-row li:nth-child(3) {
+    padding: 4.4em 0 !important;
+  }
+}
+@media all and (min-width: 1200px) {
+  .first-pricing-row li:nth-child(3),
+  .second-pricing-row li:nth-child(3) {
+    padding: 2.5em 0 !important;
+  }
 }
 .most-popular ul li {
   border-bottom-color: #2c3bad !important;
