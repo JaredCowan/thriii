@@ -54,7 +54,7 @@ body {
 
 .form-signin {
   max-width: 330px;
-  margin: 100px auto 0;
+  margin: 100px auto;
   background: #fff;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -2933,7 +2933,8 @@ img.sales-feature-img {
   color: #777;
 }
 .most-popular .pricing-head  h5 {
-  margin-right: 30px;
+  margin: -45px auto 0;
+  width: 200px;
   text-align: right;
 }
 .pricing-table .price-actions .btn {
@@ -3043,7 +3044,7 @@ overflow: visible;
   position: absolute;
   min-width: 90px;
   max-width: 300px;
-  min-height: 100px;
+  min-height: 50px;
   display: block;
   background-color: #fafafa;
   color: #000;
