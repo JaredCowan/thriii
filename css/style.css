@@ -3151,7 +3151,18 @@ overflow: visible;
   left: -9999px;
 }
 
+/* All Pales Page */
+#sales-pages {
+  margin-top: 100px !important;
+}
+/* END All Pales Page */
 
+/* Login Page */
+.login-body,
+#blog-page {
+  margin-top: 150px !important;
+}
+/* END Login Page */
 
 /* Signup Page */
 .thriii-signup-form {
