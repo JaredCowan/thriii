@@ -16,6 +16,12 @@
   <link rel="stylesheet" href="assets/revolution_slider/rs-plugin/css/settings.css" media="screen">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style-responsive.css" rel="stylesheet" />
+  <script>
+    var fullDate   = new Date()
+      , monthNames = [ "January", "February", "March", "April", "May", "June",
+                       "July", "August", "September", "October", "November", "December"
+                     ];
+  </script>
 </head>
 <body>
   <!--header start-->
@@ -52,8 +58,8 @@
           <div class="row">
             <div class="col-lg-2 col-sm-2">
               <div class="date-wrap">
-                <span class="date">10</span>
-                <span class="month">September</span>
+                <span class="date" id="date"></span>
+                <span class="month" id="month"></span>
               </div>
               <div class="comnt-wrap">
                 <span class="comnt-ico">
@@ -352,5 +358,12 @@
   <script type="text/javascript" src="assets/revolution_slider/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
   <script type="text/javascript" src="assets/revolution_slider/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
   <script src="js/common-scripts.js"></script>
+  <script>
+   var date  = document.getElementById("date")
+     , month = document.getElementById("month");
+
+   date.innerText  = fullDate.getDate()
+   month.innerText = monthNames[fullDate.getMonth()]
+  </script>
 </body>
 </html>
