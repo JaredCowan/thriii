@@ -1511,6 +1511,10 @@ ul.about-flex-slides {
           box-shadow: 0 1px 20px -4px #000;
 }
 
+.blog-post .media {
+  display: inline-block;
+}
+
 .date-wrap span, .comnt-wrap span {
   display: block;
   padding: 10px 0;
