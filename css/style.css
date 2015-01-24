@@ -1498,6 +1498,17 @@ ul.about-flex-slides {
 .date-wrap, .comnt-wrap {
   margin-bottom: 20px;
 }
+
+.media img {
+  box-shadow: 1px 2px 5px 1px #777;
+}
+
+.blog-img,
+.date-wrap, 
+.comnt-wrap {
+  box-shadow: 0 1px 20px -4px #000;
+}
+
 .date-wrap span, .comnt-wrap span {
   display: block;
   padding: 10px 0;
@@ -1507,7 +1518,7 @@ ul.about-flex-slides {
 .date-wrap .date {
   font-size:30px;
   font-weight: 300;
-  background: #F77B6F;
+  background: rgb(140,214,0);
   color: #fff;
   border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
@@ -1516,22 +1527,22 @@ ul.about-flex-slides {
 .date-wrap .month {
   font-size:16px;
   font-weight: 300;
-  background: #f6f5f0;
-  color: #a19fa2;
+  background: #2c3bad;
+  color: #fff;
   border-radius: 0 0 4px 4px ;
   -webkit-border-radius: 0 0 4px 4px ;
 }
 
 .comnt-wrap .comnt-ico {
-  background: #efeee9;
-  color: #a0a0a0;
+  background: rgb(140,214,0);
+  color: #fff;
   border-radius: 4px 4px 0 0;
   -webkit-border-radius: 4px 4px 0 0;
   font-size: 20px;
 }
 .comnt-wrap .value {
-  background: #f6f5f0;
-  color: #a0a0a0;
+  background: #2c3bad;
+  color: #fff;
   border-radius: 0 0 4px 4px;
   -webkit-border-radius:0 0 4px 4px;
 }
@@ -1544,9 +1555,14 @@ ul.about-flex-slides {
 
 .blog-item h1, .blog-item h1 a {
   font-size:25px;
-  color: #F77B6F;
+  color: #475168;
   font-weight: 300;
   font-family: 'Fjalla One', sans-serif;
+}
+
+.blog-item .btn-danger {
+  background-color: #2c3bad;
+  border-color: #777;
 }
 
 .blog-item h1 {
@@ -1564,7 +1580,7 @@ ul.about-flex-slides {
 }
 
 .author a, .shate-view a {
-  color: #F77B6F;
+  color: #475168;
 }
 
 .shate-view {
